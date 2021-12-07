@@ -2,7 +2,7 @@ import React from 'react';
 import './District.css';
 const District = (props) => {
     const {areaName, division,  established, flag, population ,travelCost, areaId}= props.district;
-    //console.log(props.district);
+    // console.log(pr25ops);
     return (
         <div className='card border-0 py-3'>
             <div className="card district-container" >
@@ -13,7 +13,10 @@ const District = (props) => {
                     <p className="card-text">Established: {established}</p>
                     <p className="card-text">Totol Population: {population}</p>
                     <p className="card-text">Travel Cost: {travelCost}</p>
-                    <button className='btn-success rounded p-2'>Add Destination</button>                   
+                    <button 
+                        onClick={()=>props.handleAddToCart(props.district)}
+                        className='btn-success rounded p-2'>Add Destination
+                    </button>                   
                 </div>
             </div>
         </div>

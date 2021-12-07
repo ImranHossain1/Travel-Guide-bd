@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import District from '../District/District';
+import TravelCart from '../TravelCart/TravelCart';
 
 const Districts = () => {
     const [districts, setDistricts] = useState([]);
-
+    const [travelCart, setTravelCart]= useState([]);
     useEffect(()=>{
         fetch('./districts.JSON')
         .then(res => res.json())
@@ -11,6 +12,13 @@ const Districts = () => {
             setDistricts(data);
         });
     },[])
+
+
+
+    const handleAddToCart = (district =>{
+        const newTravelCart = [...travelCart, district];
+        setTravelCart(newTravelCart);
+    })
 
     return (
         <div className="container px-4">
@@ -22,7 +30,8 @@ const Districts = () => {
                                 {
                                     districts.map(district => <District
                                         key={district.areaId} 
-                                        district={district}>
+                                        district={district}
+                                        handleAddToCart = {handleAddToCart}>
                                     </District>)
                                 }
                         </div>
@@ -30,8 +39,7 @@ const Districts = () => {
                 </div>
                 <div className="col-md-12 col-lg-3">
                     <div className="p-3 border bg-light">
-                        <h3>Destination Added : <span>0</span></h3>
-                        <h3>Total cost: <span>0</span></h3>
+                        <TravelCart travelCart = {travelCart}></TravelCart>
                     </div>
                 </div>
             </div>
