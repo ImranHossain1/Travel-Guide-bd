@@ -1,0 +1,12 @@
+.district-container{
+    width: 18rem;
+    background-color: rgb(251, 245, 255);
+}
+.district-container img{
+    width: 500px;
+    height: 150px;
+}
+.card-body button:hover{
+    background-color: red;
+    border: 1px solid red;
+}
