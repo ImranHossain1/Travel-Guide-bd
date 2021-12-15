@@ -1,6 +1,6 @@
 # Travel Guide from Dhaka to Other Districts of Bangladesh
 
-The Link of this project is [Travel Bd.com](https://github.com/facebook/create-react-app).
+The Link of this project is [Travel Bd.com](https://travelbd-guide.netlify.app/).
 
 ## 1. This application guides tourist, who wants to explore different sides of Bnagladesh
 
