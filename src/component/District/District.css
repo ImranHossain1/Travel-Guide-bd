@@ -8,5 +8,15 @@
 }
 .card-body button:hover{
     background-color: red;
-    border: 1px solid red;
+    
+}
+.card-body button:hover .icons{
+    color: rgb(71, 231, 71);
+}
+.background{
+    background-image: linear-gradient(to right, rgb(156, 245, 163), rgb(231, 163, 151),rgb(173, 255, 179));;
+}
+
+.icons{
+    color: goldenrod;
 }
