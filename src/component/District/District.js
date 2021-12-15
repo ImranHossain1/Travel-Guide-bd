@@ -7,7 +7,7 @@ import './District.css';
 const District = (props) => {
     const {areaName, division,  established, flag, population ,travelCost}= props.district;
     
-    const train = <FontAwesomeIcon icon={faTrain} className='icons'/>
+    const train = <FontAwesomeIcon icon={faTrain} className='train-icon'/>
 
     // console.log(props);
     return (

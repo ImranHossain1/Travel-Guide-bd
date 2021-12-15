@@ -2,7 +2,6 @@ import React from 'react';
 import AddedTravelDestination from '../AddedTravelDestination/AddedTravelDestination';
 import './TravelCart.css';
 const TravelCart = (props) => {
-    // console.log(props.travelCart)
     const {travelCart} = props;
     console.log(travelCart);
     let total = 0;
@@ -18,6 +17,7 @@ const TravelCart = (props) => {
             </div>
             <div>
                 {
+                    //added selected carts
                     travelCart.map(district => <AddedTravelDestination
                         key= {district.areaId}
                         travelDestination = {district}
