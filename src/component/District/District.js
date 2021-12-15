@@ -28,7 +28,7 @@ const District = (props) => {
                     <div className='mt-2'>
                     <i className="fab fa-facebook-square"></i>
                     <i className="fab fa-instagram mx-4"></i>
-                    <i class="fab fa-twitter"></i>
+                    <i className="fab fa-twitter"></i>
                     </div>
                
                 </div>
